@@ -3,6 +3,11 @@ Debug/
 cmake-build-debug/
 .idea/*
 .settings/*
+TouchGFX/config
+TouchGFX/generated
+TouchGFX/simulator
+TouchGFX/gui
+Middlewares/ST/touchgfx
 # Created by .ignore support plugin (hsz.mobi)
 ### C template
 # Prerequisites
