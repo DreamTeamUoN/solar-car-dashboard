@@ -1,13 +1,20 @@
-### Custom
-**/Debug/
+### CLion
 **/cmake-build-debug/
 **/.idea/*
-**/.settings/*
+
+# CubeIDE
+**/Debug/
+**/Release/
+**/.settings/
+.mxproject
+
+# TouchGFX
 **/TouchGFX/config
 **/TouchGFX/generated
 **/TouchGFX/simulator
 **/TouchGFX/gui
 **/Middlewares/ST/touchgfx
+
 # Created by .ignore support plugin (hsz.mobi)
 ### C template
 # Prerequisites
