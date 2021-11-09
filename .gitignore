@@ -14,8 +14,8 @@
 # TouchGFX
 **/TouchGFX/generated
 **/TouchGFX/target/generated
-**/Middlewares/ST/touchgfx/lib
 **/TouchGFX/config
+**/Middlewares/ST/touchgfx/lib
 
 # Created by .ignore support plugin (hsz.mobi)
 ### C template
