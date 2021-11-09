@@ -12,6 +12,7 @@
 .mxproject
 
 # TouchGFX
+**/TouchGFX/generated
 **/Middlewares/ST/touchgfx
 
 # Created by .ignore support plugin (hsz.mobi)
