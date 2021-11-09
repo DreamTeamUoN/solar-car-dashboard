@@ -10,9 +10,9 @@
             "Width": 800,
             "Height": 480,
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 35,
+              "Green": 12,
+              "Blue": 66
             }
           }
         ],
