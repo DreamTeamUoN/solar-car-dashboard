@@ -17,7 +17,9 @@
 **/TouchGFX/config
 **/TouchGFX/simulator
 # **/TouchGFX/gui
-**/Middlewares/ST/touchgfx/lib
+# **/Middlewares/ST/touchgfx/lib
+**/Middlewaresnew/*
+**/TouchGFXnew/*
 
 # Created by .ignore support plugin (hsz.mobi)
 ### C template
@@ -147,3 +149,6 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 **/.idea/caches/build_file_checksums.ser
 
+# Don't ignore these files
+!**/Middlewares/ST/touchgfx/framework/tools/**
+!**/Middlewares/ST/touchgfx/**/lib/**
