@@ -10,7 +10,7 @@
 **/Release/
 **/.settings/
 .mxproject
-**/.launch
+*.launch
 
 # TouchGFX
 **/TouchGFX/generated
