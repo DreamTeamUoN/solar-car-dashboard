@@ -16,10 +16,6 @@
 **/TouchGFX/target/generated
 **/TouchGFX/config
 **/TouchGFX/simulator
-# **/TouchGFX/gui
-# **/Middlewares/ST/touchgfx/lib
-**/Middlewaresnew/*
-**/TouchGFXnew/*
 
 # Created by .ignore support plugin (hsz.mobi)
 ### C template
