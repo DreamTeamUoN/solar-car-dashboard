@@ -7,8 +7,9 @@
           {
             "Type": "Box",
             "Name": "box1",
-            "Width": 800,
-            "Height": 480,
+            "Y": 61,
+            "Width": 445,
+            "Height": 419,
             "Color": {
               "Red": 178,
               "Blue": 45
