@@ -16,7 +16,7 @@
 **/TouchGFX/target/generated
 **/TouchGFX/config
 **/TouchGFX/simulator
-**/TouchGFX/gui
+# **/TouchGFX/gui
 **/Middlewares/ST/touchgfx/lib
 
 # Created by .ignore support plugin (hsz.mobi)
