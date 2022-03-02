@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.18.0">
-  <Texts />
+  <Texts>
+    <Text Id="__SingleUse_WJVO" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Current Speed</Translation>
+    </Text>
+    <Text Id="__SingleUse_J0AO" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Target Speed</Translation>
+    </Text>
+    <Text Id="__SingleUse_N0C1" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Battery Percentage</Translation>
+    </Text>
+    <Text Id="__SingleUse_9WDI" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Range</Translation>
+    </Text>
+    <Text Id="__SingleUse_WZ1P" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Battery Temp</Translation>
+    </Text>
+    <Text Id="__SingleUse_N3IZ" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">&lt;&gt; %</Translation>
+    </Text>
+    <Text Id="__SingleUse_ZF05" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;MPH</Translation>
+    </Text>
+    <Text Id="__SingleUse_E52Q" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;MPH</Translation>
+    </Text>
+    <Text Id="__SingleUse_CQIA" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;MPH</Translation>
+    </Text>
+    <Text Id="__SingleUse_02Y2" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;°C</Translation>
+    </Text>
+    <Text Id="__SingleUse_IR67" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">0 </Translation>
+    </Text>
+    <Text Id="__SingleUse_86UI" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">0 </Translation>
+    </Text>
+    <Text Id="__SingleUse_5H5N" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">0 </Translation>
+    </Text>
+    <Text Id="__SingleUse_5WFA" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">0</Translation>
+    </Text>
+  </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="@" WildcardCharacters="0-9" WidgetWildcardCharacters="0123456789." WildcardCharacterRanges="0-9" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" FallbackCharacter="@" WildcardCharacters="0-9" WildcardCharacterRanges="0-9" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>
