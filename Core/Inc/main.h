@@ -66,8 +66,8 @@ void Error_Handler(void);
 #define RENDER_TIME_GPIO_Port GPIOC
 #define VSYNC_FREQ_Pin GPIO_PIN_6
 #define VSYNC_FREQ_GPIO_Port GPIOC
-#define RENDER_TIME2_Pin GPIO_PIN_5
-#define RENDER_TIME2_GPIO_Port GPIOJ
+#define RENDER_TIME2_LD2_Pin GPIO_PIN_5
+#define RENDER_TIME2_LD2_GPIO_Port GPIOJ
 #define FRAMERATE_Pin GPIO_PIN_1
 #define FRAMERATE_GPIO_Port GPIOJ
 void   MX_I2C4_Init(void);
