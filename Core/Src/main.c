@@ -162,7 +162,11 @@ uint8_t count = 0;
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1)
 {
-	count++;
+	if (HAL_CAN_GetRxMessage(hcan1, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
 }
 
 /* USER CODE END 0 */
@@ -219,8 +223,6 @@ int main(void)
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 
-  static unsigned short pin_state = 0;
-
   HAL_CAN_Start(&hcan1);
 
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
@@ -234,12 +236,12 @@ int main(void)
 
   TxData[0] = 0xf3;
 
-  if (HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox) == HAL_OK)
-     {
-   HAL_GPIO_WritePin(RENDER_TIME_GPIO_Port, RENDER_TIME_Pin, pin_state);
-     }
+  HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox);
 
-  //HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox);
+  if (HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox) != HAL_OK)
+  {
+	  Error_Handler();
+  }
 
   /* USER CODE END 2 */
 
@@ -303,6 +305,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
+	  if (HAL_UART_Transmit(&huart1, &count, sizeof(count), 100) != HAL_OK)
+	  		  {
+	  	  Error_Handler();
+	  		  }
+	  HAL_UART_Transmit(&huart1, (uint8_t *)"Hello World\r\n" , sizeof("Hello World\r\n"), 300);
 
     /* USER CODE BEGIN 3 */
   }
@@ -985,20 +993,20 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOJ, VSYNC_FREQ2_Pin|FRAMERATE_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOJ, VSYNC_FREQ2_Pin|RENDER_TIME2_Pin|FRAMERATE_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOJ, DSI_RESET_Pin|RENDER_TIME2_LD2_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(DSI_RESET_GPIO_Port, DSI_RESET_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, RENDER_TIME_Pin|VSYNC_FREQ_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : VSYNC_FREQ2_Pin */
-  GPIO_InitStruct.Pin = VSYNC_FREQ2_Pin;
+  /*Configure GPIO pins : VSYNC_FREQ2_Pin RENDER_TIME2_Pin */
+  GPIO_InitStruct.Pin = VSYNC_FREQ2_Pin|RENDER_TIME2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(VSYNC_FREQ2_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOJ, &GPIO_InitStruct);
 
   /*Configure GPIO pin : DSI_RESET_Pin */
   GPIO_InitStruct.Pin = DSI_RESET_Pin;
@@ -1013,13 +1021,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : RENDER_TIME2_LD2_Pin */
-  GPIO_InitStruct.Pin = RENDER_TIME2_LD2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(RENDER_TIME2_LD2_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : FRAMERATE_Pin */
   GPIO_InitStruct.Pin = FRAMERATE_Pin;
