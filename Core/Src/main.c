@@ -158,14 +158,17 @@ uint32_t TxMailbox;
 uint8_t TxData[8];
 uint8_t RxData[8];
 
-uint8_t count = 0;
+uint8_t count = 5;
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1)
 {
+	count++;
 	if (HAL_CAN_GetRxMessage(hcan1, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK)
 	{
 		Error_Handler();
 	}
+
+	Cspeed = RxData[0];
 
 }
 
@@ -236,7 +239,7 @@ int main(void)
 
   TxData[0] = 0xf3;
 
-  HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox);
+  //HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox);
 
   if (HAL_CAN_AddTxMessage(&hcan1, &TxHeader, &count, &TxMailbox) != HAL_OK)
   {
@@ -305,12 +308,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
-	  if (HAL_UART_Transmit(&huart1, &count, sizeof(count), 100) != HAL_OK)
-	  		  {
-	  	  Error_Handler();
-	  		  }
-	  HAL_UART_Transmit(&huart1, (uint8_t *)"Hello World\r\n" , sizeof("Hello World\r\n"), 300);
 
     /* USER CODE BEGIN 3 */
   }

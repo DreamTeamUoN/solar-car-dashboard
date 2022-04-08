@@ -1,12 +1,7 @@
-/*
- * queue_tasks.h
- *
- *  Created on: 2 Mar 2022
- *      Author: oabou
- */
-
 #ifndef APPLICATION_USER_QUEUE_TASKS_H_
 #define APPLICATION_USER_QUEUE_TASKS_H_
+
+uint8_t Cspeed = 0;
 
 /* Definitions for CurrentSpeedTask */
 osThreadId_t CurrentSpeedTaskHandle;

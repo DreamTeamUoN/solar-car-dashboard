@@ -6,14 +6,21 @@
 #include "string.h"
 #include <stdlib.h>
 
- extern xQueueHandle messageA;
- unsigned int Cspeed = 0;
+extern CAN_RxHeaderTypeDef RxHeader;
+extern uint8_t RxData[8];
+extern uint8_t Cspeed;
+
+extern xQueueHandle messageA;
+extern CAN_HandleTypeDef hcan1;
+
+
  void CurrentSpeedTask(void *argument)
  {
+
    for(;;)
    {
  	xQueueSend(messageA, &Cspeed, 0);
- 	Cspeed++;
+ 	//Cspeed++;
      osDelay(100);
    }
  }
