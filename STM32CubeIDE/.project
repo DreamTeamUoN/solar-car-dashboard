@@ -710,14 +710,19 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Left_Indicator.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_Low_Battery_Indicator.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Low_Battery_Indicator.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_Right_Indicator.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Right_Indicator.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Temperature__Indicator.cpp</name>
+			<name>Application/User/generated/image_Temp_Indicator.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Temperature__Indicator.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Temp_Indicator.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>

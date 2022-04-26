@@ -19,6 +19,15 @@
     <Text Id="__SingleUse_UAWN" TypographyId="Large" Alignment="Left" Direction="LTR">
       <Translation Language="GB">0 </Translation>
     </Text>
+    <Text Id="__SingleUse_Z684" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Range</Translation>
+    </Text>
+    <Text Id="__SingleUse_N2A6" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_1Z06" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">0 KMH</Translation>
+    </Text>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="@" WildcardCharacters="0-9" WildcardCharacterRanges="0-9" />

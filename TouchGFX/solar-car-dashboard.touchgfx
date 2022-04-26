@@ -139,8 +139,8 @@
           {
             "Type": "ScalableImage",
             "Name": "scalableImage1",
-            "X": 374,
-            "Y": 369,
+            "X": 58,
+            "Y": 390,
             "Width": 88,
             "Height": 64,
             "Filename": "Headlight_Indicator.png",
@@ -148,19 +148,9 @@
           },
           {
             "Type": "ScalableImage",
-            "Name": "scalableImage2",
-            "X": 168,
-            "Y": 357,
-            "Width": 118,
-            "Height": 65,
-            "Filename": "Temperature _Indicator.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "ScalableImage",
             "Name": "scalableImage3",
-            "X": 544,
-            "Y": 364,
+            "X": 210,
+            "Y": 266,
             "Width": 89,
             "Height": 69,
             "Filename": "Brake_Indicator.png",
@@ -187,13 +177,14 @@
           {
             "Type": "BoxProgress",
             "Name": "boxProgress1",
-            "X": 200,
-            "Y": 276,
+            "X": 373,
+            "Y": 360,
             "Width": 400,
             "Height": 30,
             "Color": {
-              "Green": 63,
-              "Blue": 122
+              "Red": 3,
+              "Green": 83,
+              "Blue": 158
             },
             "Direction": "Right",
             "IndicatorPositionX": 2,
@@ -202,6 +193,61 @@
             "IndicatorPositionHeight": 30,
             "ProgressRangeMax": 100,
             "ProgressInitialValue": 60
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage6",
+            "X": 9,
+            "Y": 250,
+            "Width": 171,
+            "Height": 100,
+            "Filename": "Temp_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage7",
+            "X": 210,
+            "Y": 365,
+            "Width": 96,
+            "Height": 90,
+            "Filename": "Low_Battery_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea9",
+            "X": 542,
+            "Y": 323,
+            "Width": 63,
+            "Height": 25,
+            "TextId": "__SingleUse_Z684",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea10",
+            "X": 541,
+            "Y": 397,
+            "Width": 65,
+            "Height": 25,
+            "TextId": "__SingleUse_N2A6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_1Z06"
+            }
           }
         ],
         "Interactions": []
