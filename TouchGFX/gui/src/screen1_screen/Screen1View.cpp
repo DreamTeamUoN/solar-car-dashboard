@@ -19,45 +19,45 @@ void Screen1View::tearDownScreen()
 
 void Screen1View::updateCspeedValue(unsigned int newCspeed)
 {
-	circleProgress3.updateValue(newCspeed, 0);
+	//circleProgress3.updateValue(newCspeed, 0);
 
-	Unicode::snprintf(textArea8Buffer, TEXTAREA8_SIZE, "%d", newCspeed);
-	textArea8.resizeToCurrentText();
-	textArea8.invalidate();
+	//Unicode::snprintf(textArea8Buffer, TEXTAREA8_SIZE, "%d", newCspeed);
+	//textArea8.resizeToCurrentText();
+	//textArea8.invalidate();
 }
 
 void Screen1View::updateTspeedValue(unsigned int newTspeed)
 {
-	circleProgress4.updateValue(newTspeed, 0);
+	//circleProgress4.updateValue(newTspeed, 0);
 
-	Unicode::snprintf(textArea7Buffer, TEXTAREA7_SIZE, "%d", newTspeed);
-	textArea7.resizeToCurrentText();
-	textArea7.invalidate();
+	//Unicode::snprintf(textArea7Buffer, TEXTAREA7_SIZE, "%d", newTspeed);
+	//textArea7.resizeToCurrentText();
+	//textArea7.invalidate();
 }
 
 void Screen1View::updateBattperValue(unsigned int newBattper)
 {
-	imageProgress1.updateValue(newBattper, 0);
+	//imageProgress1.updateValue(newBattper, 0);
 
-	textProgress1.updateValue(newBattper, 0);
+	//textProgress1.updateValue(newBattper, 0);
 }
 
 void Screen1View::updateRangeValue(unsigned int newRange)
 {
-	boxProgress1.updateValue(newRange, 0);
+	//boxProgress1.updateValue(newRange, 0);
 
-	Unicode::snprintf(textArea9Buffer, TEXTAREA9_SIZE, "%d", newRange);
-	textArea9.resizeToCurrentText();
-	textArea9.invalidate();
+	//Unicode::snprintf(textArea9Buffer, TEXTAREA9_SIZE, "%d", newRange);
+	//textArea9.resizeToCurrentText();
+	//textArea9.invalidate();
 }
 
 void Screen1View::updateBatteryTempValue(unsigned int newBatteryTemp)
 {
-	boxProgress2.updateValue(newBatteryTemp, 0);
+	//boxProgress2.updateValue(newBatteryTemp, 0);
 
-	Unicode::snprintf(textArea10Buffer, TEXTAREA10_SIZE, "%d", newBatteryTemp);
-	textArea10.resizeToCurrentText();
-	textArea10.invalidate();
+	//Unicode::snprintf(textArea10Buffer, TEXTAREA10_SIZE, "%d", newBatteryTemp);
+	//textArea10.resizeToCurrentText();
+	//textArea10.invalidate();
 }
 
 
