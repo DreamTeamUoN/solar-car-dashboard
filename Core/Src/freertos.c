@@ -69,6 +69,66 @@ const osThreadAttr_t videoTask_attributes = {
   .stack_size = 1000 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for CurrentSpeedTask */
+osThreadId_t CurrentSpeedTaskHandle;
+const osThreadAttr_t CurrentSpeedTask_attributes = {
+  .name = "CurrentSpeedTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for TargetSpeedTask */
+osThreadId_t TargetSpeedTaskHandle;
+const osThreadAttr_t TargetSpeedTask_attributes = {
+  .name = "TargetSpeedTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for BatteryPercentageTask */
+osThreadId_t BatteryPercentageTaskHandle;
+const osThreadAttr_t BatteryPercentageTask_attributes = {
+  .name = "BatteryPercentageTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for RangeTask */
+osThreadId_t RangeTaskHandle;
+const osThreadAttr_t RangeTask_attributes = {
+  .name = "RangeTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for BatteryTemperatureTask */
+osThreadId_t BatteryTemperatureTaskHandle;
+const osThreadAttr_t BatteryTemperatureTask_attributes = {
+  .name = "BatteryTemperatureTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for messageA */
+osMessageQueueId_t messageAHandle;
+const osMessageQueueAttr_t messageA_attributes = {
+  .name = "messageA"
+};
+/* Definitions for messageB */
+osMessageQueueId_t messageBHandle;
+const osMessageQueueAttr_t messageB_attributes = {
+  .name = "messageB"
+};
+/* Definitions for messageC */
+osMessageQueueId_t messageCHandle;
+const osMessageQueueAttr_t messageC_attributes = {
+  .name = "messageC"
+};
+/* Definitions for messageD */
+osMessageQueueId_t messageDHandle;
+const osMessageQueueAttr_t messageD_attributes = {
+  .name = "messageD"
+};
+/* Definitions for messageE */
+osMessageQueueId_t messageEHandle;
+const osMessageQueueAttr_t messageE_attributes = {
+  .name = "messageE"
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -78,6 +138,11 @@ const osThreadAttr_t videoTask_attributes = {
 void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 extern void videoTaskFunc(void *argument);
+void CurrentSpeed_Task(void *argument);
+void TargetSpeed_Task(void *argument);
+void BatteryPercentage_Task(void *argument);
+void Range_Task(void *argument);
+void BatteryTemperature_Task(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -123,6 +188,22 @@ void MX_FREERTOS_Init(void) {
   /* start timers, add new ones, ... */
   /* USER CODE END RTOS_TIMERS */
 
+  /* Create the queue(s) */
+  /* creation of messageA */
+  messageAHandle = osMessageQueueNew (16, sizeof(uint16_t), &messageA_attributes);
+
+  /* creation of messageB */
+  messageBHandle = osMessageQueueNew (16, sizeof(uint16_t), &messageB_attributes);
+
+  /* creation of messageC */
+  messageCHandle = osMessageQueueNew (16, sizeof(uint16_t), &messageC_attributes);
+
+  /* creation of messageD */
+  messageDHandle = osMessageQueueNew (16, sizeof(uint16_t), &messageD_attributes);
+
+  /* creation of messageE */
+  messageEHandle = osMessageQueueNew (16, sizeof(uint16_t), &messageE_attributes);
+
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
@@ -136,6 +217,21 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of videoTask */
   videoTaskHandle = osThreadNew(videoTaskFunc, NULL, &videoTask_attributes);
+
+  /* creation of CurrentSpeedTask */
+  CurrentSpeedTaskHandle = osThreadNew(CurrentSpeed_Task, NULL, &CurrentSpeedTask_attributes);
+
+  /* creation of TargetSpeedTask */
+  TargetSpeedTaskHandle = osThreadNew(TargetSpeed_Task, NULL, &TargetSpeedTask_attributes);
+
+  /* creation of BatteryPercentageTask */
+  BatteryPercentageTaskHandle = osThreadNew(BatteryPercentage_Task, NULL, &BatteryPercentageTask_attributes);
+
+  /* creation of RangeTask */
+  RangeTaskHandle = osThreadNew(Range_Task, NULL, &RangeTask_attributes);
+
+  /* creation of BatteryTemperatureTask */
+  BatteryTemperatureTaskHandle = osThreadNew(BatteryTemperature_Task, NULL, &BatteryTemperatureTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -163,6 +259,96 @@ void StartDefaultTask(void *argument)
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
+}
+
+/* USER CODE BEGIN Header_CurrentSpeed_Task */
+/**
+* @brief Function implementing the CurrentSpeedTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_CurrentSpeed_Task */
+void CurrentSpeed_Task(void *argument)
+{
+  /* USER CODE BEGIN CurrentSpeed_Task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END CurrentSpeed_Task */
+}
+
+/* USER CODE BEGIN Header_TargetSpeed_Task */
+/**
+* @brief Function implementing the TargetSpeedTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_TargetSpeed_Task */
+void TargetSpeed_Task(void *argument)
+{
+  /* USER CODE BEGIN TargetSpeed_Task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END TargetSpeed_Task */
+}
+
+/* USER CODE BEGIN Header_BatteryPercentage_Task */
+/**
+* @brief Function implementing the BatteryPercentageTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_BatteryPercentage_Task */
+void BatteryPercentage_Task(void *argument)
+{
+  /* USER CODE BEGIN BatteryPercentage_Task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END BatteryPercentage_Task */
+}
+
+/* USER CODE BEGIN Header_Range_Task */
+/**
+* @brief Function implementing the RangeTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_Range_Task */
+void Range_Task(void *argument)
+{
+  /* USER CODE BEGIN Range_Task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END Range_Task */
+}
+
+/* USER CODE BEGIN Header_BatteryTemperature_Task */
+/**
+* @brief Function implementing the BatteryTemperatureTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_BatteryTemperature_Task */
+void BatteryTemperature_Task(void *argument)
+{
+  /* USER CODE BEGIN BatteryTemperature_Task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END BatteryTemperature_Task */
 }
 
 /* Private application code --------------------------------------------------*/
