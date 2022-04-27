@@ -27,12 +27,6 @@ public:
 
     virtual ~Screen1Presenter() {};
 
-     void CspeedValue(unsigned int Cspeed);
-     void TspeedValue(unsigned int Tspeed);
-     void BattperValue(unsigned int Battper);
-     void RangeValue(unsigned int Range);
-     void BatteryTempValue(unsigned int BatteryTemp);
-
 private:
     Screen1Presenter();
 

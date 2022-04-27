@@ -11,13 +11,6 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-
-    void updateCspeedValue(unsigned int newCspeed);
-    void updateTspeedValue(unsigned int newTspeed);
-    void updateBattperValue(unsigned int newBattper);
-    void updateRangeValue(unsigned int newRange);
-    void updateBatteryTempValue(unsigned int newBatteryTemp);
-
 protected:
 };
 
