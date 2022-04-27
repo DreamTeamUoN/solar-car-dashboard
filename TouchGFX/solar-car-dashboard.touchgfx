@@ -7,8 +7,8 @@
           {
             "Type": "Button",
             "Name": "button1",
-            "X": 206,
-            "Y": 295,
+            "X": 374,
+            "Y": 155,
             "Width": 170,
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
