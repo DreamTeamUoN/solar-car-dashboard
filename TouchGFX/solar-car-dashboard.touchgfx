@@ -3,12 +3,24 @@
     "Screens": [
       {
         "Name": "Screen1",
-        "Components": [],
+        "Components": [
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 280,
+            "Y": 65,
+            "Width": 170,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Style": "Style4"
+          }
+        ],
         "Interactions": []
       }
     ],
     "CustomContainerDefinitions": [],
-    "Name": "MyApplication_6",
+    "Name": "solar-car-dashboard",
     "Resolution": {
       "Width": 800,
       "Height": 480
