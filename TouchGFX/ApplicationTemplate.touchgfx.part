@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "STM32F769I_DISCO",
+    "Name": "solar-car-dashboard",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 16 ],
     "AvailableLCDs":
@@ -14,7 +14,7 @@
         "Height": 480
       }
     ],
-    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../STM32F769I_DISCO.ioc --platform=m7",
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../solar-car-dashboard.ioc --platform=m7",
     "Family" : "STM32F7",
     "SubFamily" : "STM32F7x9"
   },

@@ -2,7 +2,7 @@
 <project>
     <fileVersion>3</fileVersion>
     <configuration>
-        <name>STM32F769I_DISCO</name>
+        <name>solar-car-dashboard</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>

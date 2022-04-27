@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>STM32F769I_DISCO</name>
+	<name>solar-car-dashboard</name>
 	<comment/>
 	<projects>
 	</projects>
@@ -35,9 +35,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>STM32F769I_DISCO.ioc</name>
+			<name>solar-car-dashboard.ioc</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/STM32F769I_DISCO.ioc</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/solar-car-dashboard.ioc</locationURI>
 		</link>
 		<link>
 			<name>Utilities/jpeg_utils.c</name>
