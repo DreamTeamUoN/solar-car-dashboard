@@ -70,7 +70,6 @@ void Error_Handler(void);
 #define RENDER_TIME2_GPIO_Port GPIOJ
 #define FRAMERATE_Pin GPIO_PIN_1
 #define FRAMERATE_GPIO_Port GPIOJ
-void   MX_I2C4_Init(void);
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
