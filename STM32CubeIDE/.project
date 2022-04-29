@@ -745,14 +745,44 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/BitmapDatabase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Blue_Buttons_Round_Edge_small.cpp</name>
+			<name>Application/User/generated/image_Blue_ProgressIndicators_fill_large_circle_indicator_fill_line_half.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_ProgressIndicators_fill_large_circle_indicator_fill_line_half.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Blue_Buttons_Round_Edge_small_pressed.cpp</name>
+			<name>Application/User/generated/image_Brake_Indicator.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Brake_Indicator.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Headlight_Indicator.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Headlight_Indicator.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Left_Indicator.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Left_Indicator.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Low_Battery_Indicator.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Low_Battery_Indicator.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Right_Indicator.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Right_Indicator.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Temp_Indicator.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Temp_Indicator.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/LanguageGb.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/texts/src/LanguageGb.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Texts.cpp</name>

@@ -3,17 +3,227 @@
     "Screens": [
       {
         "Name": "Screen1",
+        "CanvasBufferSize": 12000,
         "Components": [
           {
-            "Type": "Button",
-            "Name": "button1",
-            "X": 163,
-            "Y": 370,
-            "Width": 170,
-            "Height": 60,
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Style": "Style4"
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 18,
+              "Green": 17,
+              "Blue": 17
+            }
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "circleProgress1",
+            "X": 308,
+            "Y": 149,
+            "Width": 184,
+            "Height": 94,
+            "FileNameProgress": "__designer\\Blue_ProgressIndicators_fill_large_circle_indicator_fill_line_half.png",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "CenterX": 92,
+            "CenterY": 92,
+            "Radius": 82,
+            "LineWidth": 16,
+            "StartAngle": -90,
+            "EndAngle": 90,
+            "CapPrecision": "Butt",
+            "ProgressRangeMax": 150,
+            "ProgressInitialValue": 96
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "circleProgress2",
+            "X": 348,
+            "Y": 186,
+            "Width": 104,
+            "Height": 54,
+            "Color": {
+              "Red": 9,
+              "Green": 184
+            },
+            "CenterX": 52,
+            "CenterY": 52,
+            "Radius": 42,
+            "LineWidth": 16,
+            "StartAngle": -90,
+            "EndAngle": 90,
+            "CapPrecision": "Butt",
+            "ProgressRangeMax": 150,
+            "ProgressInitialValue": 98
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 109,
+            "Height": 67,
+            "Filename": "Left_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage2",
+            "X": 688,
+            "Width": 112,
+            "Height": 67,
+            "Filename": "Right_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 522,
+            "Y": 218,
+            "Width": 146,
+            "Height": 25,
+            "TextId": "__SingleUse_L2VV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 61,
+              "Green": 131,
+              "Blue": 179
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 517,
+            "Y": 169,
+            "Width": 156,
+            "Height": 49,
+            "TextId": "__SingleUse_AYAE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_25MZ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 74,
+            "Y": 169,
+            "Width": 156,
+            "Height": 49,
+            "TextId": "__SingleUse_7CPJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_CIX1",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea4",
+            "X": 86,
+            "Y": 218,
+            "Width": 132,
+            "Height": 25,
+            "TextId": "__SingleUse_MO4V",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 9,
+              "Green": 184
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage3",
+            "X": 35,
+            "Y": 391,
+            "Width": 98,
+            "Height": 76,
+            "Filename": "Brake_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage4",
+            "X": 167,
+            "Y": 375,
+            "Width": 126,
+            "Height": 84,
+            "Filename": "Temp_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage5",
+            "X": 45,
+            "Y": 280,
+            "Width": 78,
+            "Height": 81,
+            "Filename": "Low_Battery_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage6",
+            "X": 195,
+            "Y": 274,
+            "Width": 98,
+            "Height": 87,
+            "Filename": "Headlight_Indicator.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "BoxProgress",
+            "Name": "boxProgress1",
+            "X": 492,
+            "Y": 371,
+            "Width": 180,
+            "Height": 16,
+            "Color": {
+              "Green": 151,
+              "Blue": 255
+            },
+            "Direction": "Right",
+            "IndicatorPositionX": 2,
+            "IndicatorPositionY": 2,
+            "IndicatorPositionWidth": 180,
+            "IndicatorPositionHeight": 16,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5",
+            "X": 564,
+            "Y": 346,
+            "Width": 63,
+            "Height": 25,
+            "TextId": "__SingleUse_CMUQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
         "Interactions": []
